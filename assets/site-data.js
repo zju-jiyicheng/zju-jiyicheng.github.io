@@ -16,7 +16,7 @@ window.SITE_DATA = {
       "Multimodal Speculative Decoding"
     ],
     status:
-      "I am actively seeking an academic internship. Feel free to contact me!",
+      "I am actively seeking internship. Feel free to contact me!",
     lastUpdated: "Last Updated: 2026-04-10",
     contacts: [
       {
@@ -35,6 +35,10 @@ window.SITE_DATA = {
         href: "https://scholar.google.com/citations?hl=en&authuser=2&user=mbbcLoMAAAAJ"
       }
     ]
+  },
+  overview: {
+    title: "A Line of Work on Speculative Decoding for Video LLMs",
+    image: "assets/vlm_spec.png"
   },
   publications: [
     {

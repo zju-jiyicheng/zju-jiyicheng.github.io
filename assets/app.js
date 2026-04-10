@@ -78,6 +78,19 @@
     });
   }
 
+  function renderOverview(overview) {
+    if (!overview) {
+      return;
+    }
+
+    setText("overview-title", overview.title);
+
+    var overviewImage = document.getElementById("overview-image");
+    if (overviewImage && overview.image) {
+      overviewImage.src = overview.image;
+    }
+  }
+
   function renderPublications(publications) {
     var list = document.getElementById("publication-list");
 
@@ -162,6 +175,7 @@
   }
 
   renderProfile(siteData.profile);
+  renderOverview(siteData.overview);
   renderPublications(siteData.publications);
   setText("footer-text", siteData.footerText);
 })();
