@@ -373,9 +373,10 @@ h3 {
 
 .publication-media img {
   width: 100%;
+  aspect-ratio: 16 / 10;
   height: auto;
-  object-fit: contain;
-  object-position: center top;
+  object-fit: cover;
+  object-position: center center;
   border-radius: 16px;
   border: 1px solid rgba(164, 184, 214, 0.14);
   box-shadow:

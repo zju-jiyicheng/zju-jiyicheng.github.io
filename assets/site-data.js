@@ -89,7 +89,7 @@ window.SITE_DATA = {
         "Zhizhou Zhong, <u>Yicheng Ji</u>, Zhe Kong, Yiying Liu, Jiarui Wang, Jiasun Feng, Lupeng Liu, Xiangyi Wang, Yanjia Li, Yuqing She, Ying Qin, Huan Li, Shuiyang Mao, Wei Liu, and Wenhan Luo",
       image: "assets/anytalker.png",
       links: [
-        { label: "PDF", href: "https://arxiv.org/pdf/2511.23475" }
+        { label: "arXiv", href: "https://arxiv.org/abs/2511.23475" }
       ]
     }
   ],
