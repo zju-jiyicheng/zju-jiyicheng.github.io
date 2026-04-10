@@ -334,7 +334,7 @@ h3 {
 
 .publication-card {
   display: grid;
-  grid-template-columns: minmax(320px, 36%) minmax(0, 1fr);
+  grid-template-columns: minmax(380px, 42%) minmax(0, 1fr);
   gap: 0;
   overflow: hidden;
   border-radius: 28px;
@@ -353,6 +353,9 @@ h3 {
 }
 
 .publication-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 18px;
   background: linear-gradient(180deg, rgba(10, 18, 36, 0.96), rgba(13, 22, 40, 0.92));
   position: relative;
