@@ -77,6 +77,15 @@
   function renderPublications(publications) {
     var list = document.getElementById("publication-list");
 
+    if (!publications.length) {
+      var emptyState = document.createElement("article");
+      emptyState.className = "publication-card publication-card-empty";
+      emptyState.innerHTML =
+        '<div class="publication-content"><div class="publication-badges"><span class="badge badge-muted">Soon</span></div><h3>Publications will be updated soon.</h3><p class="publication-description">This section is reserved for papers and selected research outputs. I will add detailed entries, figures, and links later.</p></div>';
+      list.appendChild(emptyState);
+      return;
+    }
+
     publications.forEach(function (publication, index) {
       var article = document.createElement("article");
       article.className = "publication-card";

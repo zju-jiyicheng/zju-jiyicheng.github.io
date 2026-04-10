@@ -270,6 +270,10 @@ h3 {
   border-radius: 28px;
 }
 
+.publication-card-empty {
+  grid-template-columns: 1fr;
+}
+
 .publication-media {
   min-height: 100%;
   background: #ece4d5;
