@@ -129,11 +129,17 @@
 
       var authors = document.createElement("p");
       authors.className = "publication-authors";
-      authors.textContent = publication.authors;
+      if (publication.authorsHtml) {
+        authors.innerHTML = publication.authorsHtml;
+      } else if (publication.authors) {
+        authors.innerHTML = publication.authors;
+      }
 
       var description = document.createElement("p");
       description.className = "publication-description";
-      description.textContent = publication.description;
+      if (publication.description) {
+        description.textContent = publication.description;
+      }
 
       var linkRow = document.createElement("div");
       linkRow.className = "publication-links";
@@ -144,7 +150,9 @@
       content.appendChild(badgeRow);
       content.appendChild(title);
       content.appendChild(authors);
-      content.appendChild(description);
+      if (publication.description) {
+        content.appendChild(description);
+      }
       content.appendChild(linkRow);
 
       article.appendChild(media);

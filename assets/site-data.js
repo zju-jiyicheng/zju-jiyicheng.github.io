@@ -36,6 +36,62 @@ window.SITE_DATA = {
       }
     ]
   },
-  publications: [],
+  publications: [
+    {
+      venue: "EMNLP Main",
+      year: "2025",
+      title: "SpecVLM: Enhancing Speculative Decoding of Video LLMs via Verifier-Guided Token Pruning",
+      authors:
+        "<u>Ji, Yicheng</u>, Zhang, Jun, Xia, Heming, Chen, Jinpeng, Shou, Lidan, Chen, Gang, and Li, Huan",
+      image: "assets/specvlm.png",
+      links: [
+        { label: "Paper", href: "https://aclanthology.org/2025.emnlp-main.366/" }
+      ]
+    },
+    {
+      venue: "ACL Main",
+      year: "2026",
+      title: "See the Forest for the Trees: Loosely Speculative Decoding via Visual-Semantic Guidance for Efficient Inference of Video LLMs",
+      authors:
+        "<u>Yicheng Ji</u>, Jun Zhang, Jinpeng Chen, Cong Wang, Lidan Shou, Gang Chen, and Huan Li",
+      image: "assets/lvspec.png",
+      links: [
+        { label: "arXiv", href: "https://arxiv.org/abs/2604.05650" }
+      ]
+    },
+    {
+      venue: "CVPR",
+      year: "2026",
+      title: "ParallelVLM: Lossless Video-LLM Acceleration with Visual Alignment Aware Parallel Speculative Decoding",
+      authors:
+        "Kong, Quan, Shen, Yuhao, <u>Ji, Yicheng</u>, Li, Huan, and Wang, Cong",
+      image: "assets/parallelvlm.png",
+      links: [
+        { label: "arXiv", href: "https://arxiv.org/abs/2603.19610" }
+      ]
+    },
+    {
+      venue: "ACL Findings",
+      year: "2026",
+      title: "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects",
+      authors:
+        "Jun Zhang, <u>Yicheng Ji</u>, Feiyang Ren, Yihang Li, Bowen Zeng, Zonghao Chen, Ke Chen, Lidan Shou, Gang Chen, and Huan Li",
+      image: "assets/efficient_inference.png",
+      links: [
+        { label: "arXiv", href: "https://arxiv.org/abs/2604.05546" }
+      ]
+    },
+    {
+      venue: "arXiv",
+      year: "2025",
+      title: "AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement",
+      authors:
+        "Zhizhou Zhong, <u>Yicheng Ji</u>, Zhe Kong, Yiying Liu, Jiarui Wang, Jiasun Feng, Lupeng Liu, Xiangyi Wang, Yanjia Li, Yuqing She, Ying Qin, Huan Li, Shuiyang Mao, Wei Liu, and Wenhan Luo",
+      image: "assets/anytalker.png",
+      links: [
+        { label: "PDF", href: "https://arxiv.org/pdf/2511.23475" }
+      ]
+    }
+  ],
   footerText: "Powered by a lightweight static site and ready for GitHub Pages."
 };

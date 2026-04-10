@@ -342,6 +342,11 @@ h3 {
   color: var(--muted);
 }
 
+.publication-authors u {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1.5px;
+}
+
 .publication-description {
   margin: 0 0 18px;
 }
