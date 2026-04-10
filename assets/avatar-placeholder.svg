@@ -1,0 +1,12 @@
+<svg width="720" height="860" viewBox="0 0 720 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="860" rx="36" fill="#F4E8D6"/>
+  <rect x="46" y="46" width="628" height="768" rx="30" fill="#FFF9F1" stroke="#D8C9B6" stroke-width="2"/>
+  <circle cx="360" cy="294" r="126" fill="#D9E8E1"/>
+  <path d="M182 648C182 551.351 260.351 473 357 473H363C459.649 473 538 551.351 538 648V699H182V648Z" fill="#C8D9D2"/>
+  <circle cx="360" cy="278" r="67" fill="#F4D4B8"/>
+  <path d="M281 706H439" stroke="#1F6B5C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M221 747H499" stroke="#A0855B" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 16"/>
+  <text x="360" y="770" fill="#5E7068" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle">
+    Replace with your portrait
+  </text>
+</svg>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Resume</title>
+    <meta
+      name="description"
+      content="A GitHub Pages-ready academic resume with About and Publications sections."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" id="brand-name">Your Name</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section" id="about">
+        <div class="container hero-grid">
+          <div class="profile-card">
+            <div class="avatar-frame">
+              <img id="profile-avatar" src="assets/avatar-placeholder.svg" alt="Profile portrait">
+            </div>
+            <div class="profile-meta">
+              <p class="eyebrow">Academic Homepage</p>
+              <h1 id="profile-name">Your Name</h1>
+              <p class="name-native" id="profile-name-native">Your Native Name</p>
+              <p class="headline" id="profile-headline">Master Student @ Your University</p>
+              <div class="contact-list" id="contact-list"></div>
+            </div>
+          </div>
+
+          <div class="about-panel">
+            <p class="section-kicker">About</p>
+            <div class="intro-block" id="profile-intro"></div>
+
+            <div class="about-subsection">
+              <h2>Research Interests</h2>
+              <ul id="interest-list"></ul>
+            </div>
+
+            <div class="about-subsection status-box">
+              <h2>Current Note</h2>
+              <p id="profile-status"></p>
+              <p class="last-updated" id="last-updated"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="publication-section" id="publications">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Publications</p>
+            <h2>Selected Publications</h2>
+            <p class="section-description">
+              Replace these placeholder entries with your own papers or projects.
+            </p>
+          </div>
+          <div class="publication-list" id="publication-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p id="footer-text">Hosted on GitHub Pages.</p>
+      </div>
+    </footer>
+
+    <script src="assets/site-data.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<svg width="920" height="620" viewBox="0 0 920 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="620" fill="#F1E8DC"/>
+  <rect x="54" y="58" width="812" height="504" rx="28" fill="#FFFDF8"/>
+  <path d="M126 404L268 218L388 330L496 180L694 404H126Z" fill="#D7E5DF"/>
+  <path d="M126 404L282 280L382 354L500 222L694 404" stroke="#1F6B5C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="126" y="118" width="192" height="44" rx="22" fill="#A0855B"/>
+  <text x="222" y="147" fill="#FFF9F1" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    PAPER 03
+  </text>
+  <path d="M126 466H728" stroke="#B7AAA1" stroke-width="10" stroke-linecap="round"/>
+  <path d="M126 506H562" stroke="#B7AAA1" stroke-width="10" stroke-linecap="round"/>
+</svg>

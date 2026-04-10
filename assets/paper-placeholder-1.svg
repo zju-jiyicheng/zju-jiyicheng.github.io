@@ -1,0 +1,12 @@
+<svg width="920" height="620" viewBox="0 0 920 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="920" height="620" fill="#E7DDD0"/>
+  <rect x="54" y="58" width="812" height="504" rx="28" fill="#FFF9F1"/>
+  <rect x="98" y="108" width="186" height="44" rx="22" fill="#1F6B5C"/>
+  <text x="191" y="137" fill="#FFF9F1" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    PAPER 01
+  </text>
+  <rect x="98" y="196" width="724" height="174" rx="22" fill="#DCE9E3"/>
+  <path d="M138 424H432" stroke="#A0855B" stroke-width="12" stroke-linecap="round"/>
+  <path d="M138 466H776" stroke="#B7AAA1" stroke-width="10" stroke-linecap="round"/>
+  <path d="M138 502H662" stroke="#B7AAA1" stroke-width="10" stroke-linecap="round"/>
+</svg>
