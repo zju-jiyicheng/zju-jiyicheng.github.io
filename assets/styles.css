@@ -215,6 +215,15 @@ h3 {
   margin: 0 0 16px;
 }
 
+.intro-block a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.intro-block a:hover {
+  text-decoration: underline;
+}
+
 .about-subsection {
   margin-top: 28px;
   padding-top: 24px;

@@ -45,7 +45,11 @@
     var introContainer = document.getElementById("profile-intro");
     profile.intro.forEach(function (paragraph) {
       var item = document.createElement("p");
-      item.textContent = paragraph;
+      if (typeof paragraph === "string") {
+        item.textContent = paragraph;
+      } else if (paragraph && paragraph.html) {
+        item.innerHTML = paragraph.html;
+      }
       introContainer.appendChild(item);
     });
 

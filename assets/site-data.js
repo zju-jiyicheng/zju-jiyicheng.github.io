@@ -5,17 +5,18 @@ window.SITE_DATA = {
     headline: "PhD Student @ Zhejiang University",
     avatar: "assets/me.jpg",
     intro: [
-      "I am currently a PhD student at Zhejiang University. My academic interests are centered on machine learning, computer vision, and multimodal intelligence.",
-      "Before starting my doctoral study, I completed my undergraduate education at the Turing Class, Chu Kochen Honors College, Zhejiang University.",
-      "This homepage presents a brief overview of my background and research. More updates on publications and ongoing work will be added soon."
+      {
+        html: 'Hi!👋 I am Yicheng Ji (季奕丞). I am currently a PhD student at Zhejiang University, advised by Prof. <a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Huan LI</a>. I also work closely with <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Jun Zhang</a>. My academic interests are centered on efficient visual understanding and video generation.'
+      },
+      "Before starting my doctoral study, I completed my undergraduate education at the Turing Class, Chu Kochen Honors College (竺可桢学院图灵班) in Zhejiang University.",
     ],
     interests: [
-      "Machine Learning",
-      "Computer Vision",
-      "Multimodal Intelligence"
+      "Efficient Visual Understanding",
+      "Efficient Video Generation",
+      "Multimodal Speculative Decoding"
     ],
     status:
-      "I am currently pursuing my PhD at Zhejiang University. Publications and project details will be updated on this page soon.",
+      "I am actively seeking an academic internship. Feel free to contact me!",
     lastUpdated: "Last Updated: 2026-04-10",
     contacts: [
       {
