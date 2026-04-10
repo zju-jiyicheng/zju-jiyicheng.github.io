@@ -46,7 +46,7 @@ window.SITE_DATA = {
       year: "2025",
       title: "SpecVLM: Enhancing Speculative Decoding of Video LLMs via Verifier-Guided Token Pruning",
       authors:
-        "<u>Ji, Yicheng</u>, Zhang, Jun, Xia, Heming, Chen, Jinpeng, Shou, Lidan, Chen, Gang, and Li, Huan",
+        "<u>Yicheng Ji*</u>, Jun Zhang*, Heming Xia, Jinpeng Chen, Lidan Shou, Gang Chen, and Huan Li",
       image: "assets/specvlm.png",
       links: [
         { label: "Paper", href: "https://aclanthology.org/2025.emnlp-main.366/" }
@@ -57,7 +57,7 @@ window.SITE_DATA = {
       year: "2026",
       title: "See the Forest for the Trees: Loosely Speculative Decoding via Visual-Semantic Guidance for Efficient Inference of Video LLMs",
       authors:
-        "<u>Yicheng Ji</u>, Jun Zhang, Jinpeng Chen, Cong Wang, Lidan Shou, Gang Chen, and Huan Li",
+        "<u>Yicheng Ji*</u>, Jun Zhang*, Jinpeng Chen, Cong Wang, Lidan Shou, Gang Chen, and Huan Li",
       image: "assets/lvspec.png",
       links: [
         { label: "arXiv", href: "https://arxiv.org/abs/2604.05650" }
@@ -68,7 +68,7 @@ window.SITE_DATA = {
       year: "2026",
       title: "ParallelVLM: Lossless Video-LLM Acceleration with Visual Alignment Aware Parallel Speculative Decoding",
       authors:
-        "Kong, Quan, Shen, Yuhao, <u>Ji, Yicheng</u>, Li, Huan, and Wang, Cong",
+        "Quan Kong, Yuhao Shen, <u>Yicheng Ji</u>, Huan Li, and Cong Wang",
       image: "assets/parallelvlm.png",
       links: [
         { label: "arXiv", href: "https://arxiv.org/abs/2603.19610" }
@@ -79,7 +79,7 @@ window.SITE_DATA = {
       year: "2026",
       title: "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects",
       authors:
-        "Jun Zhang, <u>Yicheng Ji</u>, Feiyang Ren, Yihang Li, Bowen Zeng, Zonghao Chen, Ke Chen, Lidan Shou, Gang Chen, and Huan Li",
+        "Jun Zhang*, <u>Yicheng Ji*</u>, Feiyang Ren, Yihang Li, Bowen Zeng, Zonghao Chen, Ke Chen, Lidan Shou, Gang Chen, and Huan Li",
       image: "assets/efficient_inference.png",
       links: [
         { label: "arXiv", href: "https://arxiv.org/abs/2604.05546" }
