@@ -359,7 +359,7 @@ h3 {
 
 .overview-media img {
   width: 100%;
-  aspect-ratio: 21 / 8;
+  aspect-ratio: 18 / 8;
   object-fit: contain;
   object-position: center center;
   border-radius: 18px;
