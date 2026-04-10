@@ -6,12 +6,12 @@ window.SITE_DATA = {
     avatar: "assets/me.jpg",
     intro: [
       {
-        html: 'Hi!👋 I am Yicheng Ji (季奕丞). I am currently a PhD student at Zhejiang University, advised by Prof. <a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Huan Li</a>. I also work closely with <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Jun Zhang</a>. My academic interests are centered on efficient visual understanding and video generation.'
+        html: 'Hi!👋 I am Yicheng Ji (季奕丞). I am currently a PhD student at Zhejiang University, advised by Prof. <a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Huan Li</a>. I also work closely with <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Jun Zhang</a>. My academic interests are centered on Efficient Video Understanding and Generation.'
       },
       "Before starting my doctoral study, I completed my undergraduate education at the Turing Class, Chu Kochen Honors College (竺可桢学院图灵班) in Zhejiang University.",
     ],
     interests: [
-      "Efficient Visual Understanding",
+      "Efficient Video Understanding",
       "Efficient Video Generation",
       "Multimodal Speculative Decoding"
     ],

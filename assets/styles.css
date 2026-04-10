@@ -1,14 +1,14 @@
 :root {
-  --bg: #f7f2ea;
-  --bg-soft: #fbf8f2;
-  --panel: rgba(255, 252, 247, 0.88);
-  --panel-strong: #fffdf9;
-  --text: #20312c;
-  --muted: #5e7068;
-  --line: rgba(32, 49, 44, 0.12);
-  --accent: #1f6b5c;
-  --accent-soft: rgba(31, 107, 92, 0.12);
-  --shadow: 0 24px 60px rgba(36, 50, 45, 0.08);
+  --bg: #0b1020;
+  --bg-soft: #11182b;
+  --panel: rgba(16, 23, 40, 0.84);
+  --panel-strong: #16203a;
+  --text: #edf3ff;
+  --muted: #9eabc4;
+  --line: rgba(164, 184, 214, 0.16);
+  --accent: #7cc4ff;
+  --accent-soft: rgba(124, 196, 255, 0.16);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
 }
 
 * {
@@ -24,9 +24,10 @@ body {
   color: var(--text);
   font-family: "IBM Plex Sans", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(31, 107, 92, 0.15), transparent 28%),
-    radial-gradient(circle at top right, rgba(160, 122, 70, 0.12), transparent 24%),
-    linear-gradient(180deg, #f8f5ee 0%, #f3ede2 100%);
+    radial-gradient(circle at top left, rgba(84, 142, 255, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(77, 193, 255, 0.14), transparent 22%),
+    radial-gradient(circle at 50% 18%, rgba(124, 196, 255, 0.1), transparent 28%),
+    linear-gradient(180deg, #0a1020 0%, #0d1324 46%, #0a0f1c 100%);
 }
 
 a {
@@ -49,7 +50,7 @@ img {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(16px);
-  background: rgba(248, 245, 238, 0.78);
+  background: rgba(8, 12, 24, 0.72);
   border-bottom: 1px solid var(--line);
 }
 
@@ -65,6 +66,7 @@ img {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.01em;
+  color: var(--text);
 }
 
 .site-nav {
@@ -97,9 +99,23 @@ img {
 .profile-card,
 .about-panel,
 .publication-card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   background: var(--panel);
   box-shadow: var(--shadow);
+}
+
+.profile-card::before,
+.about-panel::before,
+.publication-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent 20%),
+    linear-gradient(120deg, rgba(124, 196, 255, 0.08), transparent 36%);
 }
 
 .profile-card {
@@ -107,6 +123,9 @@ img {
   top: 100px;
   padding: 24px;
   border-radius: 28px;
+  backdrop-filter: blur(12px);
+  background:
+    linear-gradient(180deg, rgba(18, 27, 47, 0.92), rgba(13, 19, 35, 0.9));
 }
 
 .avatar-frame {
@@ -114,10 +133,23 @@ img {
   border-radius: 22px;
   background: var(--panel-strong);
   border: 1px solid var(--line);
+  aspect-ratio: 1 / 1;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 14px 36px rgba(0, 0, 0, 0.22);
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .profile-meta {
   padding-top: 22px;
+  position: relative;
+  z-index: 1;
 }
 
 .eyebrow,
@@ -165,17 +197,21 @@ h3 {
 .name-native {
   margin: 10px 0 6px;
   color: var(--muted);
+  letter-spacing: 0.04em;
 }
 
 .headline {
   margin: 0;
   font-weight: 500;
+  color: #d8e3f7;
 }
 
 .contact-list {
   display: grid;
   gap: 12px;
   margin-top: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-pill {
@@ -190,7 +226,8 @@ h3 {
 
 .contact-pill:hover {
   transform: translateY(-2px);
-  border-color: rgba(31, 107, 92, 0.35);
+  border-color: rgba(124, 196, 255, 0.4);
+  background: rgba(24, 35, 58, 0.96);
 }
 
 .contact-pill span {
@@ -208,11 +245,20 @@ h3 {
 .about-panel {
   padding: 30px;
   border-radius: 32px;
+  backdrop-filter: blur(12px);
+  background:
+    linear-gradient(180deg, rgba(16, 23, 40, 0.94), rgba(11, 17, 31, 0.92));
 }
 
 .intro-block p,
 .status-box p {
   margin: 0 0 16px;
+}
+
+.intro-block {
+  max-width: 68ch;
+  position: relative;
+  z-index: 1;
 }
 
 .intro-block a {
@@ -228,6 +274,8 @@ h3 {
   margin-top: 28px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
+  position: relative;
+  z-index: 1;
 }
 
 .about-subsection ul {
@@ -244,7 +292,10 @@ h3 {
 .status-box {
   padding: 24px;
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(31, 107, 92, 0.08), rgba(31, 107, 92, 0.03));
+  background:
+    linear-gradient(180deg, rgba(124, 196, 255, 0.12), rgba(124, 196, 255, 0.04)),
+    rgba(15, 21, 36, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .last-updated {
@@ -258,6 +309,7 @@ h3 {
 
 .section-heading {
   margin-bottom: 24px;
+  max-width: 760px;
 }
 
 .section-description {
@@ -277,25 +329,50 @@ h3 {
   gap: 0;
   overflow: hidden;
   border-radius: 28px;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
 .publication-card-empty {
   grid-template-columns: 1fr;
 }
 
+.publication-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(124, 196, 255, 0.26);
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.42);
+}
+
 .publication-media {
   min-height: 100%;
-  background: #ece4d5;
+  background: #0f172a;
+  position: relative;
+}
+
+.publication-media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 30%;
+  background: linear-gradient(180deg, transparent, rgba(10, 15, 28, 0.28));
+  pointer-events: none;
 }
 
 .publication-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 280ms ease;
+}
+
+.publication-card:hover .publication-media img {
+  transform: scale(1.02);
 }
 
 .publication-content {
   padding: 26px 28px;
+  background: linear-gradient(180deg, rgba(17, 24, 43, 0.78), rgba(12, 18, 34, 0.94));
+  position: relative;
+  z-index: 1;
 }
 
 .publication-badges,
@@ -316,25 +393,26 @@ h3 {
   padding: 0 12px;
   border-radius: 999px;
   background: var(--accent);
-  color: #f8faf8;
+  color: #09101d;
   font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.03em;
 }
 
 .badge-muted {
-  background: rgba(32, 49, 44, 0.08);
+  background: rgba(255, 255, 255, 0.07);
   color: var(--muted);
 }
 
 .badge-outline {
   background: transparent;
   color: var(--accent);
-  border: 1px solid rgba(31, 107, 92, 0.25);
+  border: 1px solid rgba(124, 196, 255, 0.28);
 }
 
 .publication-content h3 {
   margin-bottom: 12px;
+  letter-spacing: 0.005em;
 }
 
 .publication-authors {
@@ -343,8 +421,10 @@ h3 {
 }
 
 .publication-authors u {
+  color: #dceaff;
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(124, 196, 255, 0.75);
 }
 
 .publication-description {
@@ -356,9 +436,21 @@ h3 {
   font-weight: 600;
 }
 
+.text-link:hover {
+  text-shadow: 0 0 16px rgba(124, 196, 255, 0.22);
+}
+
+.text-link,
+.site-nav a,
+.brand,
+.contact-pill,
+.intro-block a {
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
-  background: rgba(255, 252, 247, 0.75);
+  background: rgba(8, 12, 24, 0.68);
 }
 
 .footer-shell {
