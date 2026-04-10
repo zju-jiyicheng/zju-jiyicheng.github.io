@@ -79,7 +79,7 @@ window.SITE_DATA = {
       year: "2026",
       title: "Efficient Inference for Large Vision-Language Models: Bottlenecks, Techniques, and Prospects",
       authors:
-        "Jun Zhang*, <u>Yicheng Ji*</u>, Feiyang Ren, Yihang Li, Bowen Zeng, Zonghao Chen, Ke Chen, Lidan Shou, Gang Chen, and Huan Li",
+        "Jun Zhang*, <u>Yicheng Ji*</u>, Feiyang Ren*, Yihang Li*, Bowen Zeng*, Zonghao Chen*, Ke Chen, Lidan Shou, Gang Chen, and Huan Li",
       image: "assets/efficient_inference.png",
       links: [
         { label: "arXiv", href: "https://arxiv.org/abs/2604.05546" }
