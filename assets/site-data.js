@@ -17,7 +17,7 @@ window.SITE_DATA = {
     ],
     status:
       "I am actively seeking internship. Feel free to contact me!",
-    lastUpdated: "Last Updated: 2026-04-10",
+    lastUpdated: "Last Updated: 2026-05-15",
     contacts: [
       {
         label: "Email",
@@ -41,6 +41,28 @@ window.SITE_DATA = {
     image: "assets/vlm_spec.png"
   },
   publications: [
+    {
+      venue: "arXiv",
+      year: "2026",
+      title: "Forcing-KV: Hybrid KV Cache Compression for Efficient Autoregressive Video Diffusion Models",
+      authors:
+        "<u>Yicheng Ji</u>, Zhizhou Zhong, Jun Zhang, Qin Yang, Xitai Jin, Ying Qin, Wenhan Luo, Shuiyang Mao, Wei Liu, and Huan Li",
+      image: "assets/forcingkv.png",
+      links: [
+        { label: "arXiv", href: "https://arxiv.org/abs/2605.09681" }
+      ]
+    },
+    {
+      venue: "arXiv",
+      year: "2026",
+      title: "Token Economics for LLM Agents: A Dual-View Study from Computing and Economics",
+      authors:
+        "Yuxi Chen*, Junming Chen*, Chenyu He*, Yiwei Li*, <u>Yicheng Ji*</u>, Yifan Wu*, Dingyu Yang, Lansong Diao, Lidan Shou, Hongliang Zhang, Huan Li, and Gang Chen",
+      image: "assets/token_economic.png",
+      links: [
+        { label: "arXiv", href: "https://arxiv.org/html/2605.09104v1" }
+      ]
+    },
     {
       venue: "EMNLP Main",
       year: "2025",
