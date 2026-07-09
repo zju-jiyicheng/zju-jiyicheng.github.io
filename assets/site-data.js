@@ -2,17 +2,18 @@ window.SITE_DATA = {
   profile: {
     name: "Yicheng Ji",
     nativeName: "季奕丞",
-    headline: "PhD Student @ Zhejiang University",
+    headline: "PhD Student\nZhejiang University",
+    location: "Hangzhou, China",
     avatar: "assets/me.jpg",
     intro: [
       {
-        html: 'Hi!👋 I am Yicheng Ji (季奕丞). I am currently a PhD student at Zhejiang University, advised by Prof. <a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Huan Li</a>. I also work closely with <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Jun Zhang</a>. My academic interests are centered on Efficient Video Understanding and Generation.'
-      },
-      "Before starting my doctoral study, I completed my undergraduate education at the Turing Class, Chu Kochen Honors College (竺可桢学院图灵班) in Zhejiang University.",
+        html: 'Hi!👋 I am <strong>Yicheng Ji (季奕丞)</strong>. I am currently a <strong>PhD student</strong> at the Institute of Artificial Intelligence, College of Computer Science and Technology, <strong>Zhejiang University</strong>, advised by Prof. <a href="https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Huan Li</a>. I also work closely with <a href="https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2" target="_blank" rel="noreferrer">Jun Zhang</a>. Previously, I received my B.S. degree from the <strong>Turing Class</strong> (an elite AI program) at Chu Kochen Honors College, Zhejiang University (浙江大学竺可桢学院图灵班). My academic interests are centered on <strong>Efficient Video Understanding and Generation</strong>, as well as <strong>video world models</strong>.'
+      }
     ],
     interests: [
       "Efficient Video Understanding",
       "Efficient Video Generation",
+      "Video World Model",
       "Multimodal Speculative Decoding"
     ],
     status:
@@ -25,7 +26,7 @@ window.SITE_DATA = {
         href: "mailto:jiyicheng.cs@zju.edu.cn"
       },
       {
-        label: "GitHub",
+        label: "Github",
         text: "github.com/zju-jiyicheng",
         href: "https://github.com/zju-jiyicheng"
       },
@@ -40,6 +41,34 @@ window.SITE_DATA = {
     title: "A Line of Work on Speculative Decoding for Video LLMs",
     image: "assets/vlm_spec.png"
   },
+  experience: [
+    {
+      group: "Education",
+      items: [
+        {
+          role: "B.S. · Zhejiang University",
+          time: "Sep 2021 - Jun 2025"
+        },
+        {
+          role: "PhD · Zhejiang University",
+          time: "Jun 2025 - Now"
+        }
+      ]
+    },
+    {
+      group: "Internships",
+      items: [
+        {
+          role: "Research Intern · Video Rebirth",
+          time: "Aug 2025 - Apr 2026"
+        },
+        {
+          role: "Research Intern · Alibaba Cloud",
+          time: "May 2026 - Now"
+        }
+      ]
+    }
+  ],
   moreAbout: {
     intro: "Some snapshots beyond research.",
     images: [

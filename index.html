@@ -35,34 +35,51 @@
         </aside>
 
         <main class="main" id="top">
-          <section class="module" id="about">
-            <h2>About Me</h2>
-            <div class="intro-block" id="profile-intro"></div>
+          <div class="tabs" role="tablist" aria-label="Homepage sections">
+            <button class="tab active" type="button" data-view="home" role="tab" aria-controls="view-home" aria-selected="true">Home</button>
+            <button class="tab" type="button" data-view="experience" role="tab" aria-controls="view-experience" aria-selected="false">Experience</button>
+            <button class="tab" type="button" data-view="beyond" role="tab" aria-controls="view-beyond" aria-selected="false">Beyond</button>
+          </div>
 
-            <div class="interest-block">
-              <h3>Research Interests</h3>
-              <div class="chips" id="interest-list"></div>
-            </div>
-          </section>
+          <div class="view active" id="view-home" role="tabpanel">
+            <section class="module" id="about">
+              <h2>About Me</h2>
+              <div class="intro-block" id="profile-intro"></div>
 
-          <section class="module overview-module" id="overview">
-            <h2>Research Overview</h2>
-            <p class="overview-title" id="overview-title">A Line of Work on Speculative Decoding for Video LLMs</p>
-            <div class="overview-media">
-              <img id="overview-image" src="assets/vlm_spec.png" alt="Research overview teaser">
-            </div>
-          </section>
+              <div class="interest-block">
+                <h3>Research Interests</h3>
+                <div class="chips" id="interest-list"></div>
+              </div>
+            </section>
 
-          <section class="module more-module" id="more-about-me" hidden>
-            <h2>More About Me</h2>
-            <p class="more-copy" id="more-about-copy"></p>
-            <div class="more-gallery" id="more-about-gallery"></div>
-          </section>
+            <section class="module overview-module" id="overview">
+              <h2>Research Overview</h2>
+              <p class="overview-title" id="overview-title">A Line of Work on Speculative Decoding for Video LLMs</p>
+              <div class="overview-media">
+                <img id="overview-image" src="assets/vlm_spec.png" alt="Research overview teaser">
+              </div>
+            </section>
 
-          <section class="module" id="publications">
-            <h2>Publications</h2>
-            <div class="publication-list" id="publication-list"></div>
-          </section>
+            <section class="module" id="publications">
+              <h2>Publications</h2>
+              <div class="publication-list" id="publication-list"></div>
+            </section>
+          </div>
+
+          <div class="view" id="view-experience" role="tabpanel" hidden>
+            <section class="module" id="experience">
+              <h2>Experience</h2>
+              <div class="timeline-list" id="experience-list"></div>
+            </section>
+          </div>
+
+          <div class="view" id="view-beyond" role="tabpanel" hidden>
+            <section class="module more-module" id="more-about-me" hidden>
+              <h2>More About Me</h2>
+              <p class="more-copy" id="more-about-copy"></p>
+              <div class="more-gallery" id="more-about-gallery"></div>
+            </section>
+          </div>
 
           <footer class="site-footer">
             <p id="footer-text">Hosted on GitHub Pages.</p>

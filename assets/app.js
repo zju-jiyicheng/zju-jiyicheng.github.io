@@ -28,19 +28,23 @@
   function iconFor(label) {
     var key = (label || "").toLowerCase();
 
+    if (key.indexOf("location") !== -1 || key.indexOf("hangzhou") !== -1) {
+      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7Z"></path></svg>';
+    }
+
     if (key.indexOf("mail") !== -1) {
-      return '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>';
+      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1.1v11.8A1 1 0 0 1 21 19H3a1 1 0 0 1-1-1.1V6.1A1 1 0 0 1 3 5Zm9 7.2L4.5 7H4v.4l8 5.6 8-5.6V7h-.5L12 12.2Z"></path></svg>';
     }
 
     if (key.indexOf("github") !== -1) {
-      return '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1.3-3.7c4.3-.5 8.8-2.1 8.8-9.5A7.4 7.4 0 0 0 20.5 0c.2.5.8 2.4-.2 4.8a10.2 10.2 0 0 0-8.6 0C10.7 2.4 11.3.5 11.5 0a7.4 7.4 0 0 0-2 4.8c0 7.4 4.5 9 8.8 9.5A4.8 4.8 0 0 0 17 18v4"></path><path d="M9 18c-4.5 2-4.5-2-6-2"></path></svg>';
+      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A12 12 0 0 0 12 .5Z"></path></svg>';
     }
 
     if (key.indexOf("scholar") !== -1) {
-      return '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5Z"></path><path d="M6 10.5V15c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"></path></svg>';
+      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 3 1.8 7.7 12 12.4l8-3.7V15h2V7.7L12 3Z"></path><path d="M5 11.4v3.3c0 1.8 3.1 3.3 7 3.3s7-1.5 7-3.3v-3.3l-7 3.2-7-3.2Z"></path></svg>';
     }
 
-    return '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.1-2.1a5 5 0 0 0-7.1-7.1L11 4.9"></path><path d="M14 11a5 5 0 0 0-7.1 0l-2.1 2.1a5 5 0 0 0 7.1 7.1L13 19.1"></path></svg>';
+    return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.1-2.1a5 5 0 0 0-7.1-7.1L11 4.9l1.4 1.4 1.1-1.1a3 3 0 0 1 4.2 4.2l-2.1 2.1a3 3 0 0 1-4.2 0L10 8.8 8.6 10.2 10 13Z"></path><path d="M14 11a5 5 0 0 0-7.1 0l-2.1 2.1a5 5 0 0 0 7.1 7.1l1.1-1.1-1.4-1.4-1.1 1.1a3 3 0 1 1-4.2-4.2l2.1-2.1a3 3 0 0 1 4.2 0l1.4 1.4 1.4-1.4L14 11Z"></path></svg>';
   }
 
   function createTextLink(linkData, className) {
@@ -51,6 +55,31 @@
     link.textContent = "[ " + (linkData.label || linkData.text || "link") + " ]";
     externalize(link, rawHref);
     return link;
+  }
+
+  function createContactRow(label, href, ariaLabel, isLink) {
+    var row = document.createElement(isLink ? "a" : "div");
+    row.className = "link-row";
+
+    if (isLink) {
+      row.href = href || "#";
+      row.setAttribute("aria-label", ariaLabel || label);
+      externalize(row, row.href);
+    } else {
+      row.classList.add("contact-location");
+    }
+
+    var icon = document.createElement("span");
+    icon.className = "link-icon";
+    icon.innerHTML = iconFor(label);
+
+    var value = document.createElement("span");
+    value.className = "val";
+    value.textContent = label;
+
+    row.appendChild(icon);
+    row.appendChild(value);
+    return row;
   }
 
   function renderProfile(profile) {
@@ -96,24 +125,13 @@
 
     var contactList = document.getElementById("contact-list");
     clear(contactList);
+
+    if (profile.location) {
+      contactList.appendChild(createContactRow(profile.location, null, profile.location, false));
+    }
+
     (profile.contacts || []).forEach(function (contact) {
-      var rawHref = contact.href || "#";
-      var wrapper = document.createElement("a");
-      wrapper.className = "link-row";
-      wrapper.href = rawHref;
-      externalize(wrapper, rawHref);
-
-      var icon = document.createElement("span");
-      icon.className = "link-icon";
-      icon.innerHTML = iconFor(contact.label);
-
-      var value = document.createElement("span");
-      value.className = "val";
-      value.textContent = contact.text || contact.label;
-
-      wrapper.appendChild(icon);
-      wrapper.appendChild(value);
-      contactList.appendChild(wrapper);
+      contactList.appendChild(createContactRow(contact.label || contact.text, contact.href, contact.text, true));
     });
   }
 
@@ -161,6 +179,55 @@
     if (!moreAbout.intro && copy) {
       copy.hidden = true;
     }
+  }
+
+  function renderExperience(groups) {
+    var list = document.getElementById("experience-list");
+    clear(list);
+
+    if (!list || !groups || !groups.length) {
+      return;
+    }
+
+    groups.forEach(function (group) {
+      var block = document.createElement("section");
+      block.className = "tl-group";
+
+      var heading = document.createElement("h3");
+      heading.textContent = group.group;
+      block.appendChild(heading);
+
+      var timeline = document.createElement("div");
+      timeline.className = "tl";
+
+      (group.items || []).forEach(function (item) {
+        var entry = document.createElement("article");
+        entry.className = "tl-item";
+
+        var role = document.createElement("div");
+        role.className = "role";
+        role.textContent = item.role;
+
+        var when = document.createElement("span");
+        when.className = "when";
+        when.textContent = item.time;
+        role.appendChild(when);
+
+        entry.appendChild(role);
+
+        if (item.detail) {
+          var detail = document.createElement("div");
+          detail.className = "detail";
+          detail.textContent = item.detail;
+          entry.appendChild(detail);
+        }
+
+        timeline.appendChild(entry);
+      });
+
+      block.appendChild(timeline);
+      list.appendChild(block);
+    });
   }
 
   function renderPublications(publications) {
@@ -234,9 +301,44 @@
     });
   }
 
+  function initTabs() {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+    var views = Array.prototype.slice.call(document.querySelectorAll(".view"));
+
+    function activate(name, shouldScroll) {
+      tabs.forEach(function (tab) {
+        var active = tab.dataset.view === name;
+        tab.classList.toggle("active", active);
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+      });
+
+      views.forEach(function (view) {
+        var active = view.id === "view-" + name;
+        view.classList.toggle("active", active);
+        view.hidden = !active;
+      });
+
+      document.body.classList.toggle("hide-news", name !== "home");
+
+      if (shouldScroll) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        activate(tab.dataset.view, true);
+      });
+    });
+
+    activate("home", false);
+  }
+
   renderProfile(siteData.profile);
   renderOverview(siteData.overview);
   renderMoreAbout(siteData.moreAbout);
+  renderExperience(siteData.experience);
   renderPublications(siteData.publications);
   setText("footer-text", siteData.footerText);
+  initTabs();
 })();
