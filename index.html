@@ -6,93 +6,86 @@
     <title>Academic Resume</title>
     <meta
       name="description"
-      content="A GitHub Pages-ready academic resume with About and Publications sections."
+      content="Academic homepage with profile, research overview, selected publications, and news."
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-shell">
-        <a class="brand" href="#top" id="brand-name">Your Name</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#overview">Research Overview</a>
-          <a href="#publications">Publications</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="top">
-      <div class="container page-layout">
-        <aside class="profile-card" aria-label="Profile summary">
-          <div class="avatar-frame">
-            <img id="profile-avatar" src="assets/avatar-placeholder.svg" alt="Profile portrait">
-          </div>
-          <div class="profile-meta">
-            <p class="eyebrow">Academic Homepage</p>
-            <h1 id="profile-name">Your Name</h1>
-            <p class="name-native" id="profile-name-native">Your Native Name</p>
-            <p class="headline" id="profile-headline">Master Student @ Your University</p>
-            <div class="contact-list" id="contact-list"></div>
-          </div>
+    <div class="wrap">
+      <div class="layout">
+        <aside class="side" aria-label="Profile summary">
+          <section class="card profile-card" aria-labelledby="profile-name">
+            <img id="profile-avatar" class="portrait" src="assets/avatar-placeholder.svg" alt="Profile portrait">
+            <div class="identity">
+              <p class="profile-kicker">Academic Homepage</p>
+              <h1 class="name">
+                <span id="profile-name">Your Name</span>
+                <span id="profile-name-native" class="zh">Your Native Name</span>
+              </h1>
+              <p class="headline" id="profile-headline">PhD Student @ Your University</p>
+            </div>
+            <nav class="links" id="contact-list" aria-label="Profile links"></nav>
+          </section>
         </aside>
 
-        <div class="content-column">
-          <section class="hero-section" id="about">
-            <div class="about-panel">
-              <p class="section-kicker">About</p>
-              <div class="intro-block" id="profile-intro"></div>
+        <main class="main" id="top">
+          <section class="module" id="about">
+            <h2>About Me</h2>
+            <div class="intro-block" id="profile-intro"></div>
 
-              <div class="about-subsection">
-                <h2>Research Interests</h2>
-                <ul id="interest-list"></ul>
-              </div>
-
-              <div class="about-subsection status-box">
-                <h2>Current Note</h2>
-                <p id="profile-status"></p>
-                <p class="last-updated" id="last-updated"></p>
-              </div>
+            <div class="interest-block">
+              <h3>Research Interests</h3>
+              <div class="chips" id="interest-list"></div>
             </div>
           </section>
 
-          <section class="overview-section" id="overview">
-            <div class="overview-card">
-              <div class="overview-content">
-                <p class="section-kicker">Research Overview</p>
-                <h2 id="overview-title">A Line of Work on Speculative Decoding for Video LLMs</h2>
-              </div>
-              <div class="overview-media">
-                <img id="overview-image" src="assets/vlm_spec.png" alt="Research overview teaser">
-              </div>
+          <section class="module overview-module" id="overview">
+            <h2>Research Overview</h2>
+            <p class="overview-title" id="overview-title">A Line of Work on Speculative Decoding for Video LLMs</p>
+            <div class="overview-media">
+              <img id="overview-image" src="assets/vlm_spec.png" alt="Research overview teaser">
             </div>
           </section>
 
-          <section class="publication-section" id="publications">
-            <div class="section-heading">
-              <p class="section-kicker">Publications</p>
-              <h2>Selected Publications</h2>
-              <p class="section-description">
-                Selected publications and preprints.
-              </p>
-            </div>
+          <section class="module more-module" id="more-about-me" hidden>
+            <h2>More About Me</h2>
+            <p class="more-copy" id="more-about-copy"></p>
+            <div class="more-gallery" id="more-about-gallery"></div>
+          </section>
+
+          <section class="module" id="publications">
+            <h2>Publications</h2>
             <div class="publication-list" id="publication-list"></div>
           </section>
-        </div>
-      </div>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container footer-shell">
-        <p id="footer-text">Hosted on GitHub Pages.</p>
+          <footer class="site-footer">
+            <p id="footer-text">Hosted on GitHub Pages.</p>
+          </footer>
+        </main>
+
+        <aside class="news-rail" aria-label="News">
+          <section class="card news-card">
+            <div class="news-head">
+              <span class="beat" aria-hidden="true"></span>
+              <h2>News</h2>
+            </div>
+            <div class="nlist">
+              <article class="nitem">
+                <span class="ndate">Current</span>
+                <p class="ntext" id="profile-status"></p>
+                <p class="nmeta" id="last-updated"></p>
+              </article>
+            </div>
+          </section>
+        </aside>
       </div>
-    </footer>
+    </div>
 
     <script src="assets/site-data.js"></script>
     <script src="assets/app.js"></script>

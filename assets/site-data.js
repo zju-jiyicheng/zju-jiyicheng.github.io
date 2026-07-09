@@ -40,6 +40,18 @@ window.SITE_DATA = {
     title: "A Line of Work on Speculative Decoding for Video LLMs",
     image: "assets/vlm_spec.png"
   },
+  moreAbout: {
+    intro: "Some snapshots beyond research.",
+    images: [
+      { src: "assets/homepage/1.jpg", alt: "More About Me photo 1" },
+      { src: "assets/homepage/2.jpg", alt: "More About Me photo 2" },
+      { src: "assets/homepage/3.jpg", alt: "More About Me photo 3" },
+      { src: "assets/homepage/4.jpg", alt: "More About Me photo 4" },
+      { src: "assets/homepage/5.jpg", alt: "More About Me photo 5" },
+      { src: "assets/homepage/6.jpg", alt: "More About Me photo 6" },
+      { src: "assets/homepage/7.jpg", alt: "More About Me photo 7" }
+    ]
+  },
   publications: [
     {
       venue: "arXiv",
