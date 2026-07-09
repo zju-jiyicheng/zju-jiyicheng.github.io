@@ -3,11 +3,10 @@ window.SITE_DATA = {
     name: "Yicheng Ji",
     nativeName: "季奕丞",
     headline: "PhD Student\nZhejiang University",
-    location: "Hangzhou, China",
     avatar: "assets/me.jpg",
     intro: [
       {
-        html: "Hi!👋 I am <strong>Yicheng Ji (季奕丞)</strong>. I am currently a <strong>PhD student</strong> at the Institute of Artificial Intelligence, College of Computer Science and Technology, <strong>Zhejiang University</strong>, advised by Prof. <a href=\"https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2\" target=\"_blank\" rel=\"noreferrer\">Huan Li</a>. I also work closely with <a href=\"https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2\" target=\"_blank\" rel=\"noreferrer\">Jun Zhang</a>. Previously, I received my B.S. degree from the <strong>Turing Class</strong> (an elite AI program) at Chu Kochen Honors College, Zhejiang University (浙江大学竺可桢学院图灵班). My academic interests are centered on <strong>Efficient Video Understanding and Generation</strong>, as well as <strong>video world models</strong>."
+        html: "Hi!👋 I am <strong>Yicheng Ji (季奕丞)</strong>, a <strong>PhD student</strong> at the Institute of Artificial Intelligence, College of Computer Science and Technology, <strong>Zhejiang University</strong>, advised by Prof. <a href=\"https://scholar.google.com/citations?user=fZoYJz8AAAAJ&hl=en&authuser=2\" target=\"_blank\" rel=\"noreferrer\">Huan Li</a>. I also work closely with <a href=\"https://scholar.google.com/citations?user=JSvMHnEAAAAJ&hl=en&authuser=2\" target=\"_blank\" rel=\"noreferrer\">Jun Zhang</a>. Previously, I received my B.S. degree from the <strong>Turing Class</strong> (an elite AI program) at Chu Kochen Honors College, Zhejiang University (浙江大学竺可桢学院图灵班). My academic interests are centered on <strong>Efficient Video Understanding and Generation</strong>, as well as <strong>video world models</strong>."
       }
     ],
     interests: [
