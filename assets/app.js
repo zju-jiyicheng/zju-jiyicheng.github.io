@@ -28,10 +28,6 @@
   function iconFor(label) {
     var key = (label || "").toLowerCase();
 
-    if (key.indexOf("location") !== -1 || key.indexOf("hangzhou") !== -1) {
-      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7Z"></path></svg>';
-    }
-
     if (key.indexOf("mail") !== -1) {
       return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1.1v11.8A1 1 0 0 1 21 19H3a1 1 0 0 1-1-1.1V6.1A1 1 0 0 1 3 5Zm9 7.2L4.5 7H4v.4l8 5.6 8-5.6V7h-.5L12 12.2Z"></path></svg>';
     }
@@ -133,10 +129,6 @@
 
     var contactList = document.getElementById("contact-list");
     clear(contactList);
-
-    if (profile.location) {
-      contactList.appendChild(createContactRow(profile.location, null, profile.location, false));
-    }
 
     (profile.contacts || []).forEach(function (contact) {
       contactList.appendChild(createContactRow(contact.label || contact.text, contact.href, contact.text, true));
