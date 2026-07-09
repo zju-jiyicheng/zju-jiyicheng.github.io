@@ -40,8 +40,16 @@
       return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A12 12 0 0 0 12 .5Z"></path></svg>';
     }
 
+    if (key.indexOf("linkedin") !== -1) {
+      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9.5h4v11H3v-11Zm6.2 0h3.8v1.5h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v5.4h-4v-4.8c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5v4.9h-4v-11Z"></path></svg>';
+    }
+
     if (key.indexOf("scholar") !== -1) {
       return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 3 1.8 7.7 12 12.4l8-3.7V15h2V7.7L12 3Z"></path><path d="M5 11.4v3.3c0 1.8 3.1 3.3 7 3.3s7-1.5 7-3.3v-3.3l-7 3.2-7-3.2Z"></path></svg>';
+    }
+
+    if (key.indexOf("xiaohongshu") !== -1 || key.indexOf("rednote") !== -1) {
+      return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5h8V7H8v2Zm0 4h6v-2H8v2Zm0 4h8v-2H8v2Z"></path></svg>';
     }
 
     return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.1-2.1a5 5 0 0 0-7.1-7.1L11 4.9l1.4 1.4 1.1-1.1a3 3 0 0 1 4.2 4.2l-2.1 2.1a3 3 0 0 1-4.2 0L10 8.8 8.6 10.2 10 13Z"></path><path d="M14 11a5 5 0 0 0-7.1 0l-2.1 2.1a5 5 0 0 0 7.1 7.1l1.1-1.1-1.4-1.4-1.1 1.1a3 3 0 1 1-4.2-4.2l2.1-2.1a3 3 0 0 1 4.2 0l1.4 1.4 1.4-1.4L14 11Z"></path></svg>';
